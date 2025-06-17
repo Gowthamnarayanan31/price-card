@@ -18,7 +18,7 @@ A simple React application that displays pricing plans in a clean, responsive ca
 ---
 
 
-## 🛠️ Tech Stack
+## 🛠️ Tech Stack  
 
 - React
 - Bootstrap (via CDN or installed)
