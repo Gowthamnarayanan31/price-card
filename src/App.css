@@ -1,38 +1,91 @@
-.App {
-  text-align: center;
+/* Global Styles */
+body {
+  background-color: #f8f9fa;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.card-row {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-wrap: wrap;     
+  gap: 2rem;           
+  margin-top: 2rem;
+}
+
+
+.card {
+  background-color: aqua;
+  border-radius: 10px;
+  width: 300px;      
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Card Header */
+.card-header {
+  background-color: #ffffff;
+  border-bottom: none;
+  padding: 1rem 1.5rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+/* Card Title */
+.card-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Feature List */
+.list-unstyled li {
+  padding: 0.5rem 0;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.text-muted {
+  color: #aaa !important;
+}
+
+/* Button */
+.btn-outline-primary {
+  border-radius: 50px;
+  font-weight: 600;
+  padding: 10px 20px;
+}
+
+.btn-outline-primary:hover {
+  background-color: #0d6efd;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .card-title {
+    font-size: 2rem;
+  }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .card {
+    width: 90%;         /* Stack and shrink cards on smaller screens */
+    margin: 0 auto;
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.row {
+  display: flex;
+  grid-gap:15%;
 }
