@@ -1,91 +1,64 @@
-/* Global Styles */
-body {
-  background-color: #f8f9fa;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin: 0;
-  padding: 0;
+.styles-card{
+  background-color:powderblue;
+  color: black;
+  width: 250px;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
 }
-
-.container {
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-
-.card-row {
+.card-container {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;     
-  gap: 2rem;           
-  margin-top: 2rem;
+  flex-direction: row;
+  flex-wrap: wrap; 
+  justify-content: center; 
+  gap: 10px; 
+  margin-top: 20px;
 }
-
-
-.card {
+.button-edit{
   background-color: aqua;
-  border-radius: 10px;
-  width: 300px;      
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-}
-
-/* Card Header */
-.card-header {
-  background-color: #ffffff;
-  border-bottom: none;
-  padding: 1rem 1.5rem;
-  font-size: 1.25rem;
-  font-weight: 600;
-}
-
-/* Card Title */
-.card-title {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-}
-
-/* Feature List */
-.list-unstyled li {
-  padding: 0.5rem 0;
-  font-size: 0.95rem;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.text-muted {
-  color: #aaa !important;
-}
-
-/* Button */
-.btn-outline-primary {
-  border-radius: 50px;
-  font-weight: 600;
-  padding: 10px 20px;
-}
-
-.btn-outline-primary:hover {
-  background-color: #0d6efd;
   color: white;
+  border-radius: 5px;
+  padding: 10px;
+  width: 70px;
 }
 
-/* Responsive tweaks */
-@media (max-width: 768px) {
-  .card-title {
-    font-size: 2rem;
-  }
-
-  .card {
-    width: 90%;         /* Stack and shrink cards on smaller screens */
-    margin: 0 auto;
-  }
+.button-delete{
+  background-color: orangered;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+  width: 70px;
+  gap: 2rem;
 }
-.row {
+.button{
   display: flex;
-  grid-gap:15%;
+  gap: 1rem;
+  justify-content: end;
+}
+.input{
+  display: flex;
+  gap: 4rem;
+  justify-content: center;
+
+
+}
+input{
+  width: 25%;
+  border-color: cyan;
+  border-radius: 4px;
+  padding: 20px;
+}
+.button-add{
+  color: white;
+    background-color: cyan;
+    border-radius: 5px;
+    width: 150px;
+}
+.h2{  
+      display: flex;
+
+    margin-left: 20px;
+    margin-right: 56px;
+    margin-top: 50px;
+    justify-content: space-between;
 }

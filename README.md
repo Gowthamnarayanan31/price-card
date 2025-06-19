@@ -1,30 +1,19 @@
-# 💳 React Price Card
+# 📝 React Todo App
 
-A simple React application that displays pricing plans in a clean, responsive card layout using Bootstrap. This project demonstrates how to use reusable components, props, and conditional rendering in React.
-
----
-
-## 🧩 Features
-
-- Displays **3 pricing plans**: Free, Pro, and Enterprise
-- Each plan shows:
-  - Plan name
-  - Monthly price
-  - Feature list with ✅ enabled and ❌ disabled features
-  - Call-to-action button
-- Built using **React** and **Bootstrap**
-- Component-based architecture
+A simple React-based Todo List application with full **CRUD functionality**, **status filters**, and a modern UI using functional components and `useState`.
 
 ---
 
+## 🚀 Features
 
-## 🛠️ Tech Stack  
+- ✅ Add new todos with **title** and **description**
+- ✅ Default status: `"Not Completed"`
+- ✅ Edit existing todos
+- ✅ Delete todos
+- ✅ Change status between **"Completed"** and **"Not Completed"**
+- ✅ Filter todos by status: **All / Completed / Not Completed**
+- ✅ Styled using plain CSS for simplicity
+- ✅ Responsive and accessible structure
 
-- React
-- Bootstrap (via CDN or installed)
-- JSX & Props
 
----
-
-## 📁 Project Structure
 
